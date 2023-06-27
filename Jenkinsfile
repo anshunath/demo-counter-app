@@ -1,3 +1,4 @@
+@Library ('jenkins_shared_lib') _
 pipeline{
     
     agent any 
@@ -24,7 +25,7 @@ pipeline{
                 
                 script{
                     
-                    sh 'mvn test'
+                    mvnTest()
                 }
             }
         }
